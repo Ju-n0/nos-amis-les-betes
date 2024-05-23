@@ -1,15 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./header.scss";
 
 function Header() {
+  const { pathname } = useLocation();
+
   return (
     <div className="header">
       <nav className="header-nav">
         <NavLink
-          className={({ isActive }) => {
-            return isActive ? "header-nav-link--active" : "header-nav-link";
+          className={() => {
+            return pathname === "/nos-amis-les-betes"
+              ? "header-nav-link--active"
+              : "header-nav-link";
           }}
-          to={"/"}
+          to={"/nos-amis-les-betes"}
         >
           Accueil
         </NavLink>
@@ -18,7 +22,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? " header-nav-link--active" : "header-nav-link";
           }}
-          to={"/prestations"}
+          to={"/nos-amis-les-betes/prestations"}
         >
           Nos prestations
         </NavLink>
@@ -27,7 +31,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? " header-nav-link--active" : "header-nav-link";
           }}
-          to={"/conseils"}
+          to={"/nos-amis-les-betes/conseils"}
         >
           Nos conseils
         </NavLink>
@@ -36,7 +40,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? " header-nav-link--active" : "header-nav-link";
           }}
-          to={"/relookings"}
+          to={"/nos-amis-les-betes/relookings"}
         >
           Nos derniers relookings
         </NavLink>
@@ -45,7 +49,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? " header-nav-link--active" : "header-nav-link";
           }}
-          to={"/avis"}
+          to={"/nos-amis-les-betes/avis"}
         >
           Les avis de nos clients
         </NavLink>
@@ -54,7 +58,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? "header-nav-link--active" : "header-nav-link";
           }}
-          to={"/rdv"}
+          to={"/nos-amis-les-betes/rdv"}
         >
           Prendre rendez-vous
         </NavLink>
@@ -63,7 +67,7 @@ function Header() {
           className={({ isActive }) => {
             return isActive ? " header-nav-link--active" : "header-nav-link";
           }}
-          to={"/contact"}
+          to={"/nos-amis-les-betes/contact"}
         >
           Nous contacter
         </NavLink>

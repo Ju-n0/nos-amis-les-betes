@@ -1,6 +1,14 @@
 import { useState } from "react";
 import "./relookings.scss";
 
+import relooking1 from "../../assets/images/relookings/relooking1.png";
+import relooking2 from "../../assets/images/relookings/relooking2.png";
+import relooking3 from "../../assets/images/relookings/relooking3.png";
+import relooking4 from "../../assets/images/relookings/relooking4.png";
+import relooking5 from "../../assets/images/relookings/relooking5.png";
+import relooking6 from "../../assets/images/relookings/relooking6.png";
+import relooking7 from "../../assets/images/relookings/relooking7.png";
+
 import { ArrowLeft, ArrowRight } from "react-feather";
 
 function Relookings() {
@@ -15,31 +23,31 @@ function Relookings() {
   const relookingsArray = [
     {
       description: "Blanc comme neige !",
-      img_source: "/relookings/relooking1.png",
+      img_source: relooking1,
     },
     {
       description: "Choupette est trop mimi",
-      img_source: "/relookings/relooking2.png",
+      img_source: relooking2,
     },
     {
       description: "Notre petit peureux",
-      img_source: "/relookings/relooking3.png",
+      img_source: relooking3,
     },
     {
       description: "Un corgi royal",
-      img_source: "/relookings/relooking4.png",
+      img_source: relooking4,
     },
     {
       description: "Frisouille est tout propre",
-      img_source: "/relookings/relooking5.png",
+      img_source: relooking5,
     },
     {
       description: "Maggie adore faire un soin",
-      img_source: "/relookings/relooking6.png",
+      img_source: relooking6,
     },
     {
       description: "Le chouchou à Marie!",
-      img_source: "/relookings/relooking7.png",
+      img_source: relooking7,
     },
   ];
   return (

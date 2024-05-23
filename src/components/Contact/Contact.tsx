@@ -9,11 +9,11 @@ function Contact() {
           <p>Civilités</p>
           <div className="details-field">
             <label htmlFor="lastname">Nom</label>
-            <input type="text" name="lastname" />
+            <input type="text" name="lastname" id="lastname" />
           </div>
           <div className="details-field">
             <label htmlFor="firstname">Prénom</label>
-            <input type="text" name="firstname" />
+            <input type="text" name="firstname" id="firstname" />
           </div>
         </fieldset>
 
@@ -21,11 +21,11 @@ function Contact() {
           <p>Vos coordonnées</p>
           <div className="details-field">
             <label htmlFor="phone-number"> Téléphone</label>
-            <input className="shadow" type="tel" name="phone-number" />
+            <input className="shadow" type="tel" name="phone-number" id="phone-number" />
           </div>
           <div className="details-field">
             <label htmlFor="email">Adresse email</label>
-            <input className="shadow" type="email" name="email" />
+            <input className="shadow" type="email" name="email" id="email" autoComplete="email" />
           </div>
         </fieldset>
       </div>
@@ -34,7 +34,11 @@ function Contact() {
           <label className="description-part" htmlFor="project-description">
             Votre message
           </label>
-          <textarea className="description-area" name="project-description"></textarea>
+          <textarea
+            className="description-area"
+            name="project-description"
+            id="project-description"
+          ></textarea>
           <button className="submit-form">Envoyer le message</button>
         </fieldset>
       </div>

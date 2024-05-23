@@ -1,6 +1,6 @@
 import "./conseils.scss";
 
-import conseilsArray from "../../data/conseils.json";
+import conseilsArray from "../../data/conseils";
 
 function Conseils() {
   return (

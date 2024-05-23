@@ -18,13 +18,13 @@ function App() {
       <SiteName />
 
       <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/prestations" element={<Prestations />} />
-        <Route path="/conseils" element={<Conseils />} />
-        <Route path="/relookings" element={<Relookings />} />
-        <Route path="/avis" element={<Avis />} />
-        <Route path="/rdv" element={<Rdv />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/nos-amis-les-betes" element={<Accueil />} />
+        <Route path="/nos-amis-les-betes/prestations" element={<Prestations />} />
+        <Route path="/nos-amis-les-betes/conseils" element={<Conseils />} />
+        <Route path="/nos-amis-les-betes/relookings" element={<Relookings />} />
+        <Route path="/nos-amis-les-betes/avis" element={<Avis />} />
+        <Route path="/nos-amis-les-betes/rdv" element={<Rdv />} />
+        <Route path="/nos-amis-les-betes/contact" element={<Contact />} />
       </Routes>
     </div>
   );

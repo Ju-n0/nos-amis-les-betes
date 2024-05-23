@@ -37,7 +37,7 @@ function Prestations() {
       <h2 className="prestations-title">Nos prestations</h2>
       <div className="prestation-container">
         {prestationArray.map((prestation) => (
-          <div className="prestation-detail">
+          <div key={prestation.name} className="prestation-detail">
             <span className="prestation-detail-name">{prestation.name}</span>
             <span className="prestation-detail-price">{prestation.price}</span>
           </div>

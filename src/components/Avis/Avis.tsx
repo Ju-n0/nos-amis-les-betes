@@ -1,5 +1,5 @@
 import "./avis.scss";
-import avisArray from "../../data/avis.json";
+import avisArray from "../../data/avis";
 
 function Avis() {
   return (
