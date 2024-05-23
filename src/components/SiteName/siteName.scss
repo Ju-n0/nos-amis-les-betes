@@ -1,0 +1,19 @@
+.siteName {
+  margin-left: 21rem;
+
+  &-image {
+    position: fixed;
+    height: 10rem;
+    width: 15rem;
+  }
+  &-title {
+    position: fixed;
+    top: -0.5%;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    font-family: "Luckiest Guy", cursive;
+    width: 10rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
